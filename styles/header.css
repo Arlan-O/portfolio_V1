@@ -1,0 +1,105 @@
+header{
+    background-image: url(../assets/Images/hero.png);
+    height: 100vh;
+    
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    color: #ffff;
+}
+nav .logo {
+    font-size: 22pt;
+    padding-left:75px ;
+}
+nav .menu ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    gap: 50px;
+    font-size: 18pt;
+    padding-right: 50px;
+}
+
+nav .menu ul a{
+    text-decoration: none;
+    color: inherit;
+}
+
+header .tag{
+    color: #ffff;
+    opacity: 30%;
+    width: 75%;
+    padding-left: 90px;
+    margin-top: 25px;
+}
+
+header .nome-hero h1, span{
+    font-family:"Playfair Display", serif;
+    font-size: 130pt;
+    color: #ffff;
+    padding-left: 150px;
+    
+}
+header .nome-hero span{
+    font-style: italic;
+    font-weight: 600;
+}
+header .nome-hero h1{
+    font-weight: 800;
+}
+
+header .descricao{
+    display: flex;
+    flex-direction: column;
+    padding-left:150px ;
+    padding-top: 50px;
+    gap: 25px;
+}
+header .title-desc h2{
+    border: 1px solid #fff;
+    width: 550px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 100;
+    opacity: 40%;
+}
+header .subtitle-desc h2{
+    color: #fff;
+    font-weight: 200;
+}
+header .CTA{
+    display: flex;
+    padding-left: 150px;
+    padding-top: 50px;
+    gap: 50px;
+}
+header .CTA .btn-1{
+background-color: #fff;
+padding: 10px;
+width: 250px;
+display: flex;
+justify-content: center;
+align-items: center;
+text-decoration: none;
+color: inherit;
+font-size: 16pt;
+}
+
+header .CTA .btn-2{
+    font-size: 16pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #fff;
+    padding: 10px;
+    width: 250px;
+    text-decoration: none;
+    color: #fff;
+    opacity: 40%;
+}
