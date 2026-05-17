@@ -51,7 +51,7 @@ section .title-sobre h1 span{
 .foco{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 30px;
     margin-top: 100px;
 }
 .foco h2{

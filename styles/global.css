@@ -9,4 +9,5 @@ body{
     background-image: url(../assets/Images/hero.png);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
