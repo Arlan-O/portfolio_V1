@@ -1,4 +1,4 @@
-const projects = [
+export const projects = [
   {
     id:"raizes-esg",
     numero: "01",
@@ -7,7 +7,7 @@ const projects = [
     descricao:
       "Plataforma conceitual desenvolvida a partir da observação dos impactos da reforma tributária e da dependência de benefícios fiscais por pequenas e médias empresas.",
     reconhecimento: "3º Lugar em projeto acadêmico multidisciplinar.",
-    stacks: "Figma | Fluxo de sistema | Pesquisa de negócio",
+    exploracao: "Figma | Fluxo de sistema | Pesquisa de negócio",
   },
   {
     id:"classificador-fiscal",
@@ -41,3 +41,5 @@ const projects = [
     exploracao:"Arduino | Sensores | Estrutura lógica | Prototipagem"
   }
 ];
+
+
