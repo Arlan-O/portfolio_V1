@@ -1,62 +1,80 @@
-import {projects} from "./projects.js";
+import { projects } from "./projects.js";
 
-const projectsGrid = document.querySelector('.projects-grid');
+const projectsGrid = document.querySelector(".projects-grid");
 
-projects.forEach((projects)=>{
-    const card = document.createElement("div");
+projects.forEach((project) => {
+  const card = document.createElement("div");
 
-    card.classList.add("project-card");
+  card.classList.add("project-card");
 
-    card.innerHTML = `
-    <span>${projects.numero}</span>
-    <h3>${projects.categoria}</h3>
-    <p>${projects.titulo}</p>
-    <p>${projects.descricao}</p>
+  card.innerHTML = `
+  <span>${project.numero}</span>  
+    <div class="card-head">
+    <h3>${project.categoria}</h3>
+    </div>
+    <div class="card-title">
+    <p>${project.titulo}</p>
+    </div>
+    <div class="card-tag desc">
+    <small>DESCRIÇÃO</SMALL>
+    <p>${project.descricao}</p>
+    </div>    
+
     
-
-    
     ${
-        projects.reconhecimento ?
-    `<small>RECONHECIMENTO</small>
-    <p>${projects.reconhecimento}</p>`
-    : ""
-}
+      project.reconhecimento
+        ? 
+        `<div class="card-tag">
+        <small>RECONHECIMENTO</small>
+        <p>${project.reconhecimento}</p> 
+        </div>`
+        : ""
+    }
 
     ${
-        projects.exploracao ?
-        `<small>EXPLORAÇÕES</small>
-        <p>${projects.exploracao}</p>
+      project.exploracao
+        ? 
+        `<div class="card-tag">
+        <small>EXPLORAÇÕES</small>
+        <p>${project.exploracao}</p>
+        </div>
         `
         : ""
     }
 
     ${
-        projects.contexto ?
-        `<small>CONTEXTO</small>
-        <p>${projects.contexto}</p>
-        `
+      project.contexto
+        ? 
+        `<div class="card-tag">
+        <small>CONTEXTO</small>
+        <p>${project.contexto}</p>
+        </div>`
         : ""
     }
 
     ${
-        projects.status ?
-        `<small>STATUS</small>
-        <p>${projects.status}</p>
-        `
+      project.status
+        ? 
+        `<div class="card-tag">
+        <small>STATUS</small>
+        <p>${project.status}</p>
+        </div>`
         : ""
     }
 
     ${
-        projects.aprendizado ?
-        `<small>APRENDIZADO</small>
-        <p>${projects.aprendizado}</p>
-        `
+      project.aprendizado
+        ? 
+        `<div class="card-tag">
+        <small>APRENDIZADO</small>
+        <p>${project.aprendizado}</p>
+        </div>`
         : ""
     }
-
-    <a href="/projects/${projects.id}.html">Ver Projeto</a>
-
+    <div class="btn">
+    <a  href="/projects/${project.id}.html">Ver Projeto</a>
+    </div>
     `;
 
-    projectsGrid.appendChild(card)
-})
+  projectsGrid.appendChild(card);
+});
