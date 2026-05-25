@@ -1,28 +1,33 @@
-.projects{
-    background-color: #0e0e0e;
-    height: auto;
-    padding-bottom: 50px;
+.projects {
+  background-color: #0e0e0e;
+  height: auto;
+  padding-bottom: 50px;
 }
-.projects h1{
-  display: flex;
+.projects h1 {
   margin-left: 200px;
   color: #fff;
-  font-family:"Playfair Display", serif;
+  font-family: "Playfair Display", serif;
+  padding-top: 100px;
 }
 
-
-.projects-grid{
-    display: grid;
-    grid-template-columns: repeat(2, minmax(300px, 1fr));
-    gap: 24px;
-    max-width: 80%;
-    margin: 0 auto;
-    padding-top: 150px;
-    
+.projects .para p{
+  margin-left: 200px;
+  color: #fff;
+  margin-top: 50px;
+  font-weight: 100;
+  font-size: 16pt;
 }
-.project-card{
-    height: auto;
-    
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(300px, 1fr));
+  gap: 24px;
+  max-width: 80%;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+.project-card {
+  height: auto;
 }
 
 .project-card {
@@ -38,23 +43,18 @@
   padding: 2px;
   border-radius: inherit;
 
-  background: linear-gradient(
-    135deg,
-    #FFD59A,
-    #202020,
-    #FFD59A
-  );
-    opacity: 35%;
+  background: linear-gradient(135deg, #ffd59a, #202020, #ffd59a);
+  opacity: 35%;
 
   -webkit-mask:
     linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
 
   -webkit-mask-composite: xor;
-          mask-composite: exclude;
+  mask-composite: exclude;
 }
 
-.card-head{
+.card-head {
   display: flex;
   justify-content: center;
   gap: 50px;
@@ -64,39 +64,35 @@
   font-weight: lighter;
 }
 
-.project-card small{
+.project-card small {
   opacity: 50%;
   font-weight: 100;
   margin-bottom: 50px;
-  
 }
 
-.project-card .card-title{
+.project-card .card-title {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 25px 0 25px 0;
   font-size: 18pt;
-  
 }
-.desc{
+.desc {
   text-align: justify;
-  
 }
-.project-card .card-tag{
+.project-card .card-tag {
   margin-bottom: 20px;
 }
 
-.btn{
+.btn {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 15px;
   padding: 5px;
-  
 }
-.btn a{
-  background-color:aliceblue;
+.btn a {
+  background-color: aliceblue;
   color: #0e0e0e;
   text-decoration: none;
   padding: 15px;
